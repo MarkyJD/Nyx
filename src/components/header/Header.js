@@ -13,8 +13,8 @@ function Header() {
 
     return (
         <div className="header_container">
-            <div className="img_container">
-                <img src={NyxLogoAlt} alt="Nyx Logo" />
+            <div className="title_container">
+                <h1 className="title">Atlas<span className="subtitle">task manager</span></h1>
             </div>
      
             <div className="search_bar">

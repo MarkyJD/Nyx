@@ -1,20 +1,44 @@
 .header_container {
   display: grid;
+  height: 100%;
   grid-template-columns: 250px 400px 1fr 150px;
   column-gap: 12px;
 }
 
-.img_container {
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  line-height: 1.5rem;
+  color: var(--cta-orange);
+  text-shadow: inherit;
+  font-family: var(--raleway);
+}
+
+.subtitle {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--dark-blue);
+  font-family: var(--subtitle);
+}
+
+.title_container {
   grid-column-start: 1;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  height: 90%;
+  text-shadow: var(--text-shadow);
 }
 
-.img_container > img {
-  height: 100%;
+.title_container:hover {
+  text-shadow: var(--text-shadow-hover);
 }
 
 .search_bar {

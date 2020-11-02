@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kurale&family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+
 body {
   /* Global variables */
   /* Colors */
@@ -13,19 +16,24 @@ body {
 
   /* borders and shadows */
   --text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  --text-shadow-hover: 2px 2px 4px rgba(0, 0, 0, 0.25);
   --box-shadow: 3px 5px 6px 1px rgba(0, 0, 0, 0.1);
   --border: 1px solid var(--lighter-blue);
   --radius: 20px;
+
+  /* Fonts */
+  --subtitle: "Kurale", serif;
+  --raleway: "Raleway", sans-serif;
 }
 
 .app {
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin-left: auto;
   margin-right: auto;
   display: grid;
   height: 100vh;
   grid-template-columns: 200px 1fr 1fr;
-  grid-template-rows: 110px 1fr 1fr 80px;
+  grid-template-rows: 70px 1fr 1fr 30px;
   /* gap: 8px; */
 }
 
