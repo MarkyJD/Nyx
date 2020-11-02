@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+body {
+  /* Global variables */
+  /* Colors */
+  --dark: #495867;
+  --dark-blue: #577399;
+  --light-blue: #bdd5ea;
+  --lighter-blue: #dae6f5;
+  --accent-blue: #f0f3fd;
+  --ghost-white: #f7f7ff;
+  --off-white: #fefefe;
+  --accent-pink: #fbabaa;
+  --cta-orange: #fe5f55;
+
+  /* borders and shadows */
+  --text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  --box-shadow: 3px 5px 6px 1px rgba(0, 0, 0, 0.4);
+  --border: 1px solid var(--accent-blue);
+  --radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 100px;
+  /* gap: 8px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border-bottom: var(--border);
+  /* background-color: aqua; */
+}
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-right: var(--border);
+  /* background-color: blue; */
+}
+.main {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  overflow: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-top: var(--border);
+  /* background-color: green; */
 }
 
-.App-link {
-  color: #61dafb;
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-blue);
+  border-radius: var(--radius);
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--lighter-blue);
 }
