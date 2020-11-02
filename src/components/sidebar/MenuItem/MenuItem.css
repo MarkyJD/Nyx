@@ -1,0 +1,24 @@
+.menu_item {
+  display: flex;
+  color: var(--dark);
+  align-items: center;
+  padding: 1em;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.menu_item--active {
+  color: var(--cta-orange);
+}
+
+.menu_item > h3 {
+  padding-left: 1em;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-shadow: var(--text-shadow);
+}
+
+.menu_item:hover {
+  background-color: var(--ghost-white);
+  color: var(--dark-blue);
+}

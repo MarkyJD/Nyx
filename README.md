@@ -1,3 +1,12 @@
+# Job Tracking and Internal Messaging app
+![picture](src/assets/images/nyx.gif)
+## Technologies used:
+
+    - React
+    - Material UI - https://material-ui.com/
+    - CSS Grid
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
