@@ -23,11 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.search_box {
-  color: var(--accent-blue) !important;
-  border-radius: var(--radius) !important;
+  margin-top: 1em;
 }
 
 .exit {

@@ -1,0 +1,52 @@
+.main_container {
+  padding: 1em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+div {
+  background-color: var(--off-white);
+}
+
+.announcements {
+  width: 54%;
+  /* height: 1000px; */
+  box-shadow: var(--box-shadow);
+  padding: 0.5em;
+  background-color: #ffffff;
+}
+
+.jobs_targets {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.jobs_targets > div {
+  margin-bottom: 12px;
+  padding: 0.5em;
+  background-color: #ffffff;
+}
+
+.new_jobs {
+  width: 100%;
+  height: 400px;
+  box-shadow: var(--box-shadow);
+  background-color: #ffffff;
+}
+
+.old_jobs {
+  width: 100%;
+  height: 300px;
+  box-shadow: var(--box-shadow);
+}
+
+.targets {
+  width: 100%;
+  height: 300px;
+  box-shadow: var(--box-shadow);
+  background-color: #ffffff;
+}

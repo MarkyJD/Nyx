@@ -8,18 +8,20 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 
 
 function Header() {
+
+
+
     return (
         <div className="header_container">
             <div className="img_container">
                 <img src={NyxLogoAlt} alt="Nyx Logo" />
             </div>
-            
-            
+     
             <div className="search_bar">
                 <TextField
                     fullWidth
                     className="search_box"
-                    variant="outlined"
+                    variant="standard"
                     color="primary"
                     id="input-with-icon-textfield"
                     placeholder="What are you looking for?"
