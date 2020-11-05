@@ -41,6 +41,7 @@ body {
   grid-column-start: 2;
   grid-column-end: 4;
   border-bottom: var(--border);
+  background-color: var(--off-white);
 }
 .sidebar {
   grid-column-start: 1;
@@ -48,6 +49,7 @@ body {
   grid-row-start: 1;
   grid-row-end: 4;
   border-right: var(--border);
+  background-color: var(--off-white);
 }
 .main {
   grid-column-start: 2;
@@ -61,7 +63,8 @@ body {
   grid-column-start: 1;
   grid-column-end: 4;
   border-top: var(--border);
-  /* background-color: green; */
+  background-color: var(--off-white);
+  
 }
 
 .feed_title {
